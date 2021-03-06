@@ -12,5 +12,33 @@ public class C0788065_Week07_ClassExercise {
         for (int i = array.length - 1 ; i >= 0 ; i-- )  {
             System.out.print(array[i] + "  ");
         }
+
+        System.out.println("\n\nSort array in ascending order:");
+        for(int i = 0 ; i < array.length ; i++){
+            for(int j = 0 ; j < i ; j++){
+                if(array[i] < array[j]){
+                    int a = array[i];
+                    array[i] = array[j];
+                    array[j] = a;
+                }
+            }
+        }
+        for (int a : array) {
+            System.out.print(a + "  ");
+        }
+
+        System.out.println("\n\nSort array in descending order:");
+        for(int i = 0 ; i < array.length ; i++){
+            for(int j = 0 ; j < i ; j++){
+                if(array[i] > array[j]){
+                    int a = array[i];
+                    array[i] = array[j];
+                    array[j] = a;
+                }
+            }
+        }
+        for (int a : array) {
+            System.out.print(a + "  ");
+        }
     }
 }
