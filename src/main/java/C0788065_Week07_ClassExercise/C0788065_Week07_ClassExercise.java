@@ -40,5 +40,26 @@ public class C0788065_Week07_ClassExercise {
         for (int a : array) {
             System.out.print(a + "  ");
         }
+
+        System.out.println("\n\nDisplay only odd elements:");
+        for(int a: array){
+            if(a % 2 != 0){
+                System.out.println(a);
+            }
+        }
+
+        System.out.println("\nDisplay only even elements:");
+        for(int a: array){
+            if(a % 2 == 0){
+                System.out.println(a);
+            }
+        }
+
+        System.out.print("\nSum of all elements: ");
+        int total = 0;
+        for(int a: array){
+            total += a;
+        }
+        System.out.println(total);
     }
 }
